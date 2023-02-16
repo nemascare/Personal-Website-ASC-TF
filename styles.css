@@ -1,11 +1,10 @@
 body {
-    margin: 0;
-    margin-top: 50px;
+    margin: 50px;
+    margin-top: 65px;
     font-family: sans-serif;
+    text-align: center;
 }
-
-
-
+  
 header {
     display: flex;
     position: fixed;
@@ -13,42 +12,83 @@ header {
     left: 0;
     right: 0;
     height: 50px;
-    line-height: 50px;
+    line-height: 40px;
     background-color: #eee;
     justify-content: center;
     align-items: flex-start;
 }
-
+  
 header * {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     height: 50px;
 }
-
+  
 header ul {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 40px;
 }
-
+  
 header li {
     margin-left: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    text-align: center;
 }
-
-section {
-    height: 100vh;
+  
+#about,
+#hero,
+#contact {
+    height: 65vh;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 30px;
-    
+  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Projects {
+    height: 75vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#footer {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -57,30 +97,47 @@ section {
 
 #hero .profile-img {
     width: 300px;
-    border-radius: 50%;
+    border-radius: 60%;
 }
-
+  
 footer {
     text-align: center;
     padding: 50px;
 }
-
+  
 #hero h1 {
     font-size: 3em;
 }
-
+  
 section h2 {
     font-size: 2.5em;
 }
+  
+.me {
+    padding: 70px 70px;
+}
 
+.project_title  {
+    text-align: center;
+}
+  
 section h3 {
     font-size: 1.5em;
 }
-
+  
 header a {
     text-decoration: none;
     color: black;
 }
+  
+#about ul {
+    list-style-type: none;
+}
+  
+#contact ul {
+    list-style-type: none;
+}
+
 
 
 #hero {
@@ -93,4 +150,13 @@ header a {
 
 #contact {
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.idfreshfood.com/wp-content/uploads/2017/09/contact_us_2.jpg');
+}
+
+#Projects {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://img.freepik.com/free-vector/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg');
+}
+
+#about,
+#contact {
+    text-align: center;
 }
